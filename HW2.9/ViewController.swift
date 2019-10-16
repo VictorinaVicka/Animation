@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     private var numberAnimationButton = NumberAnimationButton.first
     private var animationDescriptionView = AnimationDescriptionView.ferst
     
-    private var animationNames = ["shake", "flipY"]
+    private var animationNames = ["swing", "flipY"]
 
     @IBAction func startAnimation() {
         causeAnimationView()
@@ -35,8 +35,8 @@ class ViewController: UIViewController {
             springView.animate()
             numberAnimationView = .second
         case .second:
-            springView.animation = "shake"
-            springView.curve = "easeIn"
+            springView.animation = "swing"
+            springView.curve = "easeOut"
             springView.duration = 1.0
             springView.animate()
             numberAnimationView = .first
