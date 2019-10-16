@@ -14,7 +14,9 @@
 		BE307DEE2356FD6100D1B93D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE307DEC2356FD6100D1B93D /* Main.storyboard */; };
 		BE307DF02356FD6300D1B93D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE307DEF2356FD6300D1B93D /* Assets.xcassets */; };
 		BE307DF32356FD6300D1B93D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE307DF12356FD6300D1B93D /* LaunchScreen.storyboard */; };
-		BE307DFB2356FF3F00D1B93D /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE307DFA2356FF3F00D1B93D /* Animation.swift */; };
+		BEE07E9223574AB400CB4B5D /* NumberAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE07E9123574AB400CB4B5D /* NumberAnimationView.swift */; };
+		BEE07E9423574AD200CB4B5D /* NumberAnimationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE07E9323574AD200CB4B5D /* NumberAnimationButton.swift */; };
+		BEE07E9623574AE700CB4B5D /* AnimationDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE07E9523574AE700CB4B5D /* AnimationDescriptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,9 @@
 		BE307DEF2356FD6300D1B93D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE307DF22356FD6300D1B93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE307DF42356FD6300D1B93D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE307DFA2356FF3F00D1B93D /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		BEE07E9123574AB400CB4B5D /* NumberAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberAnimationView.swift; sourceTree = "<group>"; };
+		BEE07E9323574AD200CB4B5D /* NumberAnimationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberAnimationButton.swift; sourceTree = "<group>"; };
+		BEE07E9523574AE700CB4B5D /* AnimationDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDescriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,14 +79,24 @@
 			children = (
 				BE307DE62356FD6100D1B93D /* AppDelegate.swift */,
 				BE307DE82356FD6100D1B93D /* SceneDelegate.swift */,
+				BEE07E9023574A3500CB4B5D /* Models */,
 				BE307DEA2356FD6100D1B93D /* ViewController.swift */,
-				BE307DFA2356FF3F00D1B93D /* Animation.swift */,
 				BE307DEC2356FD6100D1B93D /* Main.storyboard */,
 				BE307DEF2356FD6300D1B93D /* Assets.xcassets */,
 				BE307DF12356FD6300D1B93D /* LaunchScreen.storyboard */,
 				BE307DF42356FD6300D1B93D /* Info.plist */,
 			);
 			path = HW2.9;
+			sourceTree = "<group>";
+		};
+		BEE07E9023574A3500CB4B5D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BEE07E9123574AB400CB4B5D /* NumberAnimationView.swift */,
+				BEE07E9323574AD200CB4B5D /* NumberAnimationButton.swift */,
+				BEE07E9523574AE700CB4B5D /* AnimationDescriptionView.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		CFAED0B9D799966CD06BD9E2 /* Pods */ = {
@@ -209,9 +223,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE07E9623574AE700CB4B5D /* AnimationDescriptionView.swift in Sources */,
 				BE307DEB2356FD6100D1B93D /* ViewController.swift in Sources */,
+				BEE07E9423574AD200CB4B5D /* NumberAnimationButton.swift in Sources */,
+				BEE07E9223574AB400CB4B5D /* NumberAnimationView.swift in Sources */,
 				BE307DE72356FD6100D1B93D /* AppDelegate.swift in Sources */,
-				BE307DFB2356FF3F00D1B93D /* Animation.swift in Sources */,
 				BE307DE92356FD6100D1B93D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

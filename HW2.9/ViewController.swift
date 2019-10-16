@@ -18,9 +18,7 @@ class ViewController: UIViewController {
     private var numberAnimationButton = NumberAnimationButton.first
     private var animationDescriptionView = AnimationDescriptionView.ferst
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    private var animationNames = ["shake", "flipY"]
 
     @IBAction func startAnimation() {
         causeAnimationView()
@@ -67,11 +65,11 @@ class ViewController: UIViewController {
         case .ferst:
             springLabel.text = animationDescriptionView.rawValue
             animationDescriptionView = .second
-            springButton.setTitle("shake", for: .normal)
+            springButton.setTitle(animationNames.first, for: .normal)
         case .second:
             springLabel.text = animationDescriptionView.rawValue
             animationDescriptionView = .ferst
-            springButton.setTitle("flipY", for: .normal)
+            springButton.setTitle(animationNames.last, for: .normal)
         }
     }
 }
