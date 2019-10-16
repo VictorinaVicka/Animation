@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     private var numberAnimationButton = NumberAnimationButton.first
     private var animationDescriptionView = AnimationDescriptionView.ferst
     
-    private var animationNames = ["swing", "flipY"]
+    private var animationNames = ["flipY", "swing"]
 
     @IBAction func startAnimation() {
         causeAnimationView()
@@ -65,11 +65,11 @@ class ViewController: UIViewController {
         case .ferst:
             springLabel.text = animationDescriptionView.rawValue
             animationDescriptionView = .second
-            springButton.setTitle(animationNames.first, for: .normal)
+            springButton.setTitle(animationNames.last, for: .normal)
         case .second:
             springLabel.text = animationDescriptionView.rawValue
             animationDescriptionView = .ferst
-            springButton.setTitle(animationNames.last, for: .normal)
+            springButton.setTitle(animationNames.first, for: .normal)
         }
     }
 }
